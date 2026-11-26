@@ -1,0 +1,14 @@
+{
+  "name": "chloescakeaway",
+  "private": true,
+  "description": "Chloé's Cakeaway website — build tools only (nothing here is shipped to the browser).",
+  "scripts": {
+    "images": "python3 scripts/build-images.py && node scripts/build-images.mjs",
+    "build": "python3 scripts/build-html.py",
+    "serve": "python3 -m http.server 8000"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.0",
+    "sharp": "^0.34.0"
+  }
+}
